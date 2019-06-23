@@ -4,18 +4,16 @@
     <link href="../common/cats.css" media="screen" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>A Handlebars example about cats I've met</h1>
-    <marquee><p>As you can tell, you can make a very pretty web page with this stuff.</p></marquee>
-
+    <h1>Baseball Cards</h1>
+    <p><b>Prep, Prep, Prep</b>:<i> Research is a prerequisute to value</i></p>
+    <p><b>Conversations are Interviews</b>:<i> Optimize the conversation, whether that means growing a relationship, extracting information, or achieving an objective.</i></p>
+    <div>insert search box here</div>
     <div id="content"></div>
 
     <script id="cat-template" type="text/x-handlebars-template">
       <div class="entry">
-        <h2>{{Name}}!</h2>
-        <h3>age {{Age}}</h3>
-        <div class="body">
-          {{{Description}}}
-        </div>
+        <h2><a href='cards_{{association}}.html'>{{association}}</a></h2>
+        <h3>{{records}} records</h3>
       </div>
     </script>
 
@@ -24,7 +22,7 @@
     <script type="text/javascript" src="../common/jquery.js"></script>
     <script type="text/javascript" src="../../src/tabletop.js"></script>
     <script type="text/javascript">
-      var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0AmYzu_s7QHsmdE5OcDE1SENpT1g2R2JEX2tnZ3ZIWHc&output=html';
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=1H8k3kX3ggoBNESBZGcGb-5sm_zYl_mLEQvLySrK5ohQ&output=html';
 
       $(document).ready( function() {
         Tabletop.init( { key: public_spreadsheet_url,
@@ -36,13 +34,11 @@
         var source   = $("#cat-template").html();
         var template = Handlebars.compile(source);
 
-        $.each( tabletop.sheets("Cats").all(), function(i, cat) {
+        $.each( tabletop.sheets("Data").all(), function(i, cat) {
           var html = template(cat);
           $("#content").append(html);
         });
-      }
-
-      document.write("The published spreadsheet is located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>");
+      };
     </script>
   </body>
 </html>

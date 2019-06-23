@@ -6,9 +6,9 @@
   <body>
     <h1>A Handlebars example about cats I've met</h1>
     <marquee><p>As you can tell, you can make a very pretty web page with this stuff.</p></marquee>
-    
+
     <div id="content"></div>
-    
+
     <script id="cat-template" type="text/x-handlebars-template">
       <div class="entry">
         <h2>{{Name}}!</h2>
@@ -31,7 +31,7 @@
                          callback: showInfo,
                          parseNumbers: true } );
       });
-        
+
       function showInfo(data, tabletop) {
         var source   = $("#cat-template").html();
         var template = Handlebars.compile(source);
@@ -41,8 +41,8 @@
           $("#content").append(html);
         });
       }
-    
-      document.write("The published spreadsheet is located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>");    
+
+      document.write("The published spreadsheet is located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>");
     </script>
   </body>
 </html>
