@@ -1,0 +1,13 @@
+
+@font-face {
+    font-family: 'avenir_lt_45_bookregular';
+    src: url('/fonts/avenir_lt_45_book-webfont.eot');
+    src: url('/fonts/avenir_lt_45_book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/avenir_lt_45_book-webfont.woff2') format('woff2'),
+         url('/fonts/avenir_lt_45_book-webfont.woff') format('woff'),
+         url('/fonts/avenir_lt_45_book-webfont.ttf') format('truetype'),
+         url('/fonts/avenir_lt_45_book-webfont.svg#avenir_lt_45_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

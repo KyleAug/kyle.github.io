@@ -1,0 +1,60 @@
+doctype
+html(lang='en')
+	head
+		meta(charset="UTF-8")
+		meta(name="keywords" description="Liger CSS Grid Framework, css framework, grid framework, web framework")
+		meta(name="description" content="Liger CSS Grid Framework")
+		meta(content="width=device-width,initial-scale=1.0", name="viewport")
+		link(href="css/liger.css", media="screen", rel="stylesheet", type="text/css")
+		link(href="css/main.css", media="screen", rel="stylesheet", type="text/css")
+		
+	body
+		include _nav
+								
+		.row.marginTop10
+			.large-12.columns
+				h1.margin-top-20 Visual Reference of Liger's Components
+				h2.bg-green.inline-block.padding-left-right-20 Getting Familar with the Components
+				p Below are screenshots of how the components will look with their "default" settings.
+				h3 Navigation
+				img.full-width(src="images/visual-ref-navigation.jpg")
+				.caption
+					p Responsive navigation. Up to three dropdown levels.
+
+				h3 Billboard
+				img.full-width(src="images/visual-ref-billboard.jpg")
+				.caption
+					p Just like the name suggests, this calls attention to an important message with a call-to-action. 
+
+				h3 Slider
+				img.full-width(src="images/visual-ref-slider.jpg")
+				.caption
+					p Have an array of images that you can click through by using the left and right arrows.
+
+				h3 Animated Forms
+				img.full-width(src="images/visual-ref-animated-form.jpg")
+				.caption
+					p Liven up your form inputs by using these animated inputs.
+
+				h3 Pod
+				img.full-width(src="images/visual-ref-pod.jpg")
+				.caption
+					p Section of informative content paired with a visual on top and supporting title and text below the image.		
+
+				h3 Media Object
+				img.full-width(src="images/visual-ref-media-object.jpg")
+				.caption
+					p Similar to the pod, this has image on the left and text on the right. 
+
+				h3 Buttons
+				img.full-width(src="images/visual-ref-buttons.jpg" style="max-width:400px")
+				.caption
+					p Various types of buttons with a default animated hover effect. 
+		include _footer
+
+
+
+
+
+		script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+		script(src="js/liger.js")

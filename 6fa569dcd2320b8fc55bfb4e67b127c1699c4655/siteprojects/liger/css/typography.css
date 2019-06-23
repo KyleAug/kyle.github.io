@@ -1,0 +1,45 @@
+html,
+body {
+  font-size: 62.5%; }
+
+.gigantic-type {
+  font-size: 110px;
+  font-size: 27.5vmin;
+  line-height: 1.09;
+  letter-spacing: -2px;
+}
+
+.huge-type  {
+  font-size: 68px;
+  font-size: 17vmin;
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
+
+.large-type {
+  font-size: 42px;
+  font-size: 10.5vmin;
+  line-height: 1.14;
+}
+
+.big-type {
+  font-size: 26px;
+  font-size: 6.5vmin;
+  line-height: 1.38;
+}
+.medium-type {
+  font-size: 22px;
+  font-size: 5.5vmin;
+  line-height: 1.38;
+}
+.small-type {
+  font-size: 16px;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

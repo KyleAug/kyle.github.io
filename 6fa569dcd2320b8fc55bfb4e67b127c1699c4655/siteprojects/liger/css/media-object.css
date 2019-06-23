@@ -1,0 +1,39 @@
+/* MEDIA OBJECT */
+.media-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.media:first-child {
+    margin-top: 0;
+}
+.media .object {
+    display: block;
+}
+.media, .media .body {
+    overflow: hidden;
+}
+.media {
+    margin-top: 15px;
+
+}
+.media .body, .media .left, .media .right {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.media .body {
+    max-width: 10000px;
+}
+.media .left, .media>.pull-left {
+    padding-right: 10px;
+}
+
+.media .right, .media>.pull-right {
+    padding-left: 10px;
+}
+
+.media .heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+}

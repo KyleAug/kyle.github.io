@@ -1,0 +1,36 @@
+/* BUTTON */
+button, .button {
+  padding: .6em 1.2em;
+  display: inline-block;
+	font-size:1em;
+	line-height:1.4;
+	text-align: center;
+  white-space: nowrap;
+	cursor:pointer;
+	text-decoration: none;
+  margin-bottom: 1em;
+	color:black;
+	position:relative;
+	transform:scale(1);
+	transition:all .3s cubic-bezier(0.21,-0.06, 0.35, 2.63);
+}
+
+button:hover, .button:hover{
+	transform:scale(1.05)	
+}
+
+.round {
+	border-radius:1em;
+}
+
+.circle {
+	width: 5.5em;
+    height: 5.5em;
+    border-radius: 2.75em;
+    padding-top: 1.25em;
+}
+
+.shadow {
+	box-shadow: 0px 38px 18px -10px rgba(51, 51, 51, 0.1);
+    margin-bottom: 3em;	
+}

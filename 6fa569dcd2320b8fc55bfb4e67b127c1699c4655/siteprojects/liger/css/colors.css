@@ -1,0 +1,53 @@
+/* BACKGROUND COLORS */
+/* Cool Colors */	
+.bg-aqua {background-color:#7FDBFF }
+.bg-blue {background-color:#0074D9 }
+.bg-navy {background-color:#001F3F }
+.bg-teal {background-color:#39CCCC }
+.bg-green {background-color:#2ECC40 }
+.bg-olive {background-color:#3D9970 }
+.bg-lime {background-color:#01FF70 }
+
+
+/* Warm Colors */
+.bg-yellow {background-color:#FFDC00 }
+.bg-orange {background-color:#FF851B }
+.bg-gold {background-color:#F6B50E}
+.bg-red {background-color:#FF4136 }
+.bg-fuchsia {background-color:#F012BE}
+.bg-purple {background-color:#B10DC9 }
+.bg-maroon {background-color:#85144B }
+
+
+/* Greyscale Colors */
+.bg-white {background-color:#FFF }
+.bg-silver {background-color:#DDD }
+.bg-gray {background-color:#AAA }
+.bg-black {background-color:#000 }
+
+/* TYPOGRAPHY COLORS */
+/* Cool Colors */	
+.aqua {color:#7FDBFF }
+.blue {color:#0074D9 }
+.navy {color: #001F3F }
+.teal {color:#39CCCC }
+.green {color:#2ECC40 }
+.olive {color:#3D9970 }
+.lime {color:#01FF70 }
+
+
+/* Warm Colors */
+.yellow {color: #FFDC00 }
+.orange {color: #FF851B }
+.gold {color: #F6B50E}
+.red {color: #FF4136 }
+.fuchsia {color: #F012BE }
+.purple {color: #B10DC9 }
+.maroon {color: #85144B }
+
+
+/* Greyscale Colors */
+.white {color: #FFF }
+.silver {color: #DDD }
+.gray {color: #AAA }
+.black {color: #000 }

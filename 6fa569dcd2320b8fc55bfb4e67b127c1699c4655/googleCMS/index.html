@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .post {display: flex; flex-wrap: wrap; font-family: 'Open Sans'; font-weight: 300}
+      .post h1 {font-family: 'Merriweather'}
+      .article {
+          background: deepskyblue;
+          padding: 2%;
+          width: 25%;
+          margin: 2%;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          background-size: cover;
+          background-position: center;
+          position: relative;
+          color: white;
+      }
+      .meta-info {
+            padding: 10% 0 5%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+      .meta-info img {width: 50px; min-height: 50px; border-radius: 50%; border: 1px solid white; }
+
+    </style>
+  </head>
+  <body>
+        <div class="post">
+
+
+
+        </div>
+
+        <div class="contact">
+          <form method="POST" action="http://formspree.io/tjwizard1@yahoo.com">
+          <input type="email" name="email" placeholder="Your Email Goes Here">
+          <input type="text" name="first name" value="" placeholder="Your First Name Here">
+          <input type="text" name="last name" value="" placeholder="Your Last Name Here">
+          <textarea name="message" placeholder="Your message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+
+        </div>
+
+
+  </body>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="tabletop.js"></script>
+  <script src="app.js"></script>
+
+</html>

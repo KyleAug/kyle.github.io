@@ -1,0 +1,984 @@
+doctype
+html(lang='en')
+	head
+		meta(charset="UTF-8")
+		meta(name="keywords" description="Liger CSS Grid Framework, css framework, grid framework, web framework")
+		meta(name="description" content="Liger CSS Grid Framework")
+		meta(content="width=device-width,initial-scale=1.0", name="viewport")
+		link(href="css/liger.css", media="screen", rel="stylesheet", type="text/css")
+		link(href="css/main.css", media="screen", rel="stylesheet", type="text/css")
+		
+	body
+		include _nav
+								
+		.row.marginTop10
+			.large-12.columns
+				h1.margin-top-20 How to Use the Liger Grid
+				h2.bg-aqua.inline-block.padding5ten.padding-left-right-20 Getting Started
+				p Liger’s grid works similar to Bootstrap, Foundation, Skeleton and other grids. 
+				.code 
+					span.code-div body <br> 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name row
+					span.code-marks ”&#62 <br>
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+					span.code-marks &#60/
+					span.code-div body
+					span.code-marks &#62
+				p You must first start with a “row” class. 
+
+				.code 
+						span.code-marks &#60
+						span.code-div div 
+						span.code-tag class
+						span.code-marks =“
+						span.code-name row
+						span.code-marks ”&#62 <br>
+						span.code-marks &#60
+						span.code-div div 
+						span.code-tag class
+						span.code-marks =“
+						span.code-name large-4
+						span.code-marks .
+						span.code-name columns
+						span.code-marks ”&#62 
+						span.code-marks &#60/
+						span.code-div div
+						span.code-marks &#62 <br> 
+						span.code-marks &#60
+						span.code-div div 
+						span.code-tag class
+						span.code-marks =“
+						span.code-name large-8
+						span.code-marks .
+						span.code-name columns
+						span.code-marks ”&#62 
+						span.code-marks &#60/
+						span.code-div div
+						span.code-marks &#62 <br> 
+						span.code-marks &#60/
+						span.code-div div
+						span.code-marks &#62 <br> 
+				
+				p Each row class must be followed by a div class of column. With each column there are two parameters that must be set with the column. 
+					| 1. Small, medium, and/or large (In this case it is large)<br>
+					| 2. Numeric value between 1 - 12. (In this case it is -4 & -8)<br>
+				p Liger’s grid is based on a 12 column width, so each row must have a combined total of 12 columns within that row. The reason Liger uses a 12 column width, as well as most other grids also using a 12 column width is that 12 is easily divided into smaller numbers. 12 can be divided in half, it can be divided in thirds, in fourths, and in sixths. 
+
+				p Notice the above code. It has a row with two sets of columns in it. One column is 4 columns wide and the other is 8 columns wide. Together 4+8 = our 12 columns. So this row will have two columns in it. 
+
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name row
+					span.code-marks ”&#62 <br>
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name large-4
+					span.code-marks .
+					span.code-name columns
+					span.code-marks ”&#62 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name large-4
+					span.code-marks .
+					span.code-name columns
+					span.code-marks ”&#62 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name large-4
+					span.code-marks .
+					span.code-name columns
+					span.code-marks ”&#62 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+
+
+				p The above row will have 3 columns. 
+
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name row
+					span.code-marks ”&#62 <br>
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name large-12
+					span.code-marks .
+					span.code-name columns
+					span.code-marks ”&#62 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+ 
+				p The above row will have 1 column. 
+
+				p Now that the numeric values are covered, let’s move onto the small, medium, large parameter. 
+
+				p Small = Phone<br>
+					| Medium = Tablet<br>
+					| Large = Desktop
+
+				p Let’s look at the code we had earlier. 
+
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name row
+					span.code-marks ”&#62 <br>
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name <strong>large</strong>-4
+					span.code-marks .
+					span.code-name columns
+					span.code-marks ”&#62 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name <strong>large</strong>-8
+					span.code-marks .
+					span.code-name columns
+					span.code-marks ”&#62 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+
+				p These two columns are side by side. By default the columns you set are side by side. The 4 columns wide div and the 8 columns wide div will float next to each other. 
+
+				p When we use the parameter small, medium, or large this will determine how these columns will float next to each other when the browser is resized to a phone, tablet, or desktop browser viewing size. 
+
+				p In this case the large-4 and large-8 will be side by side only on a desktop. 
+
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name row
+					span.code-marks ”&#62 <br>
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name large-4
+					span.code-marks .
+					span.code-name <strong>medium</strong>-4
+					span.code-marks .
+					span.code-name columns
+					span.code-marks ”&#62 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name large-8
+					span.code-marks .
+					span.code-name <strong>medium</strong>-4
+					span.code-marks .
+					span.code-name columns
+					span.code-marks ”&#62 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+
+				p If we wanted the large-4 and large-8 columns to float side by side on tablet as well as a desktop we would add the medium parameter. 
+
+
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name row
+					span.code-marks ”&#62 <br>
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name large-4
+					span.code-marks .
+					span.code-name medium-4
+					span.code-marks .
+					span.code-name <strong>small</strong>-4
+					span.code-marks .
+					span.code-name columns
+					span.code-marks ”&#62 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name large-8
+					span.code-marks .
+					span.code-name medium-4
+					span.code-marks .
+					span.code-name <strong>small</strong>-4
+					span.code-marks .
+					span.code-name columns
+					span.code-marks ”&#62 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+
+				p Using the same logical reasoning, we can have the two columns float next to each other on the phone as well. 
+
+				p In these two above examples with medium and the small parameters our columns will follow the same structure from the desktop. With Liger, you have some control to change the structure from desktop to tablet to phone. 
+
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name row
+					span.code-marks ”&#62 <br>
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name <strong>large</strong>-4
+					span.code-marks .
+					span.code-name <strong>medium</strong>-6
+					span.code-marks .
+					span.code-name <strong>small</strong>-12
+					span.code-marks .
+					span.code-name columns
+					span.code-marks ”&#62 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name <strong>large</strong>-8
+					span.code-marks .
+					span.code-name <strong>medium</strong>-6
+					span.code-marks .
+					span.code-name <strong>small</strong>-12
+					span.code-marks .
+					span.code-name columns
+					span.code-marks ”&#62 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+				
+				p With the above code, the two column widths are uneven on the desktop. The first column is 1/3 of the total width and the second column is 2/3 thirds of the row width. When we resize the browser to tablet size the two columns change to the same width while still being side by side. They are still side by side because our numeric value is not 12; however when we use the small-12 parameter each column will be on a new line. 
+
+				p The large parameter is for desktop, the medium is tablet, the small is for phones and the hyphenated number is for the width of the column. 2 goes into 12 six times, so -2 would be 1/6 width. 4 goes into 12 three times, so -4 would be 1/3 width. -12 would be full width. 
+
+				h2.bg-gold.inline-block.padding-left-right-20.margin-top-20 Push, Pull and Offset
+				h3 Offset
+				p You can move divs up to 11 columns to the right by using classes like <span class="bg-silver padding-left-right-10">.large-offset-1</span> and <span class="bg-silver padding-left-right-10">.small-offset-3</span>. If you want to move a div to right by 3 column widths, use offset-3. If you want to move a div to right by 11 column widths, use offset-11.
+				
+				h3 Reordering Your HTML Elements with Push &amp; Pull
+				p Let's say you have an element on the far left side of your website, and then your main content floated to the right of that element. Your website is responsive and when it displays on a phone, that html element is stacked on top of the main content. Well, you don't want that. What if you wanted that html content to be below the main content when viewed on a phone or tablet?
+
+				p This is the beauty of the Push &amp; Pull attributes. Just by adding a class to your content, the Push &amp; Pull attributes allow you to completely reorder your html content and how they are displayed in the DOM. 
+
+				p <span class="bg-silver padding-left-right-10">.large-push-3</span>, for example, would push a content by 3 columns and this will only be displayed in desktop view because of the "large" prefix in front of "push". <span class="bg-silver padding-left-right-10">.large-push-7</span> would do the same thing but push the contents 7 columns. 
+
+				p <span class="bg-silver padding-left-right-10">.medium-push-3</span>, for example, would push a content by 3 columns and this will only be displayed in tablet view because of the "medium" prefix in front of "push". 
+
+				p What if you wanted to shift content and only for it to have affect on tablet and phones? Use the small prefix for phone and medium prefix for tablet. The code will look like this <span class="bg-silver padding-left-right-10">class="medium-push-5 small-push-5"</span>
+
+				p While you push a content, you will want to pull another html content. With the "pull" attribute, you follow the same method as the "push".
+
+
+				h2.bg-green.inline-block.padding-left-right-20.margin-top-20 Liger's Components & Features
+				p Liger's components and features allow this grid framework to be more powerful than a standalone grid framework. Here is a list of the components & features that make Liger great!
+
+				h3 Colors
+
+				p You don’t have to look up hexadecimal values for colors. Liger comes built in with an assortment of colors you can easily add to your project. There are two ways you can add color to your elements. You can either add color to the typography or the background color of an item. 
+
+				p Colors are categorized as Cool colors, Warm colors, or greyscale. 
+
+				p For font colors all you need to do is type the name of the color as a class, and for background colors you will need to prefix “bg-“ to the color. 
+
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name row
+					span.code-marks ”&#62 <br>
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name large-12
+					span.code-marks .
+					span.code-name medium-12
+					span.code-marks .
+					span.code-name bg-yellow
+					span.code-marks .
+					span.code-name black
+					span.code-marks .
+					span.code-name columns
+					span.code-marks ”&#62 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+
+				p The above code will add a yellow background color with black text. 
+				
+				h3 Billboard
+
+				p The billboard is an extremely quick and straightforward way to bring attention to any news, item, product, service, etc you may have to offer. 
+ 
+
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name billboard
+					span.code-marks ”&#62 <br>
+					span.code-marks &#60
+					span.code-div h1
+					span.code-marks &#62
+					span.code-name Hello, world!
+					span.code-marks &#60/
+					span.code-div h1
+					span.code-marks &#62 <br> 
+					span.code-marks &#60
+					span.code-div p
+					span.code-marks &#62
+					span.code-name This is a simple hero unit
+					span.code-marks &#60/
+					span.code-div p
+					span.code-marks &#62 <br> 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+
+				p Add the billboard class to a parent container that houses images and/or text.
+
+				h3 Buttons
+ 
+
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name button
+					span.code-marks ”&#62
+					span.code-name Learn More
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+					span.code-marks &#60
+					span.code-div button
+					span.code-marks &#62
+					span.code-name Learn More
+					span.code-marks &#60/
+					span.code-div button
+					span.code-marks &#62 <br> 
+
+				p Buttons are an essential part of an effective website. Liger’s buttons can be initialized by declaring the button tag or using the button class. 
+
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name button round shadow
+					span.code-marks ”&#62
+					span.code-name Learn More
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+
+				p You can adjust the shape of the button by adding a round class, circle class, or the full-width class. Also, you can add a shadow to any button with the shadow class. 	
+				p In addition to changing the shape of a button, Liger’s button component comes with a simple animation when the button the user hovers over the button. 
+				
+				h3 Animated Forms
+ 
+
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name large-12
+					span.code-marks .
+					span.code-name animated
+					span.code-marks .
+					span.code-name columns
+					span.code-marks ”&#62 <br>
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name input-group
+					span.code-marks ”&#62 <br>
+					span.code-marks &#60
+					span.code-div input type
+					span.code-marks ="
+					span.code-name text
+					span.code-marks "
+					span.code-marks &#62 <br>
+					span.code-marks &#60
+					span.code-div label
+					span.code-marks &#62
+					span.code-name Label Name
+					span.code-marks &#60/
+					span.code-div label
+					span.code-marks &#62 <br>
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62
+
+
+
+
+				p Liger’s animated form offers a fantastic way to add some life and interactivity to your input fields. By adding the class “animated” to your parent div you can make your input fields animated. 
+
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name large-12
+					span.code-marks .
+					span.code-name columns
+					span.code-marks ”&#62 <br>
+					span.code-marks &#60
+					span.code-div label
+					span.code-marks &#62
+					span.code-marks &#60
+					span.code-div input type
+					span.code-marks ="
+					span.code-name radio
+					span.code-marks " 
+					span.code-div name
+					span.code-marks ="
+					span.code-name radio
+					span.code-marks "
+					span.code-marks &#62
+					span.code-marks &#60
+					span.code-div span 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name label-text
+			
+					span.code-marks ”&#62 
+					
+					
+					span.code-marks &#60/
+					span.code-div span
+					span.code-marks &#62 
+					span.code-marks &#60/
+					span.code-div label
+					span.code-marks &#62 <br>
+
+					pan.code-marks &#60
+					span.code-div label
+					span.code-marks &#62
+					span.code-marks &#60
+					span.code-div input type
+					span.code-marks ="
+					span.code-name checkbox
+					span.code-marks " 
+					span.code-div name
+					span.code-marks ="
+					span.code-name check
+					span.code-marks "
+					span.code-marks &#62
+					span.code-marks &#60
+					span.code-div span 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name label-text
+				
+					span.code-marks ”&#62 
+					
+					
+					span.code-marks &#60/
+					span.code-div span
+					span.code-marks &#62 
+					span.code-marks &#60/
+					span.code-div label
+					span.code-marks &#62 <br>
+					
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62
+
+				p With Liger you can animate radio buttons and checkboxes. By nesting the input type within the label we can easily bring some life to these form elements. You do not need to use the animated class for these two buttons. 	
+
+
+				h3 Panel
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name panel
+					span.code-marks ”&#62 <br>
+					span.code-marks &#60
+					span.code-div h1
+					span.code-marks &#62
+					span.code-name Hello, world!
+					span.code-marks &#60/
+					span.code-div h1
+					span.code-marks &#62 <br> 
+					span.code-marks &#60
+					span.code-div p
+					span.code-marks &#62
+					span.code-name This is a panel class
+					span.code-marks &#60/
+					span.code-div p
+					span.code-marks &#62 <br> 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+				p The panel component is a helper class component that adds extra margin and padding around an element. Add the class panel to your parent element. 
+
+				h3 Pod 
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name pod
+					span.code-marks ”&#62 <br>
+					span.code-marks &#60
+					span.code-div img 
+					span.code-tag src 
+					span.code-marks ="
+					span.code-name your-image-here.jpg
+					span.code-marks ''
+
+					span.code-marks /&#62
+					<br> 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name caption
+					span.code-marks ”&#62<br>
+					span.code-marks &#60
+					span.code-div h3
+					span.code-marks &#62
+					span.code-name Pod label 
+					span.code-marks &#60/
+					span.code-div h3
+					span.code-marks &#62 <br>  
+					span.code-marks &#60
+					span.code-div p
+					span.code-marks &#62
+					span.code-name Text goes here
+					span.code-marks &#60/
+					span.code-div p
+					span.code-marks &#62 <br> 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62<br>
+					
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+				p The pod component allows you to have an image with some text below the image. Add a new div with the class of pod within Liger’s columns to get a great visual display with some essential information. 
+
+				p 
+
+				p 	
+				h3 Media Object
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name media
+					span.code-marks ”&#62 <br>
+					
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name --left
+					span.code-marks ”&#62<br>
+					span.code-marks &#60
+					span.code-div img 
+					span.code-tag src 
+					span.code-marks ="
+					span.code-name your-image-here.jpg
+					span.code-marks '' 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name --media-object
+					span.code-marks ”/&#62<br>
+
+					
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name --body
+					span.code-marks ”&#62<br>
+
+					span.code-marks &#60
+					span.code-div h4 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name --heading
+					span.code-marks ”&#62
+					span.code-name Pod label 
+					span.code-marks &#60/
+					span.code-div h4
+					span.code-marks &#62 <br>  
+					span.code-marks &#60
+					span.code-div p
+					span.code-marks &#62
+					span.code-name Text goes here
+					span.code-marks &#60/
+					span.code-div p
+					span.code-marks &#62 <br> 
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62<br>
+					
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+				p Media objects are an essential part of every website. They are combination of a graphic on one side and text next to the graphic. You can see this combination all over the web. 
+
+				p 
+
+				p 	
+
+				p 	
+				h3 Navbar
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name menu
+					span.code-marks ”&#62 <br>
+					
+					span.code-marks &#60
+					span.code-div nav
+					span.code-marks &#62<br>
+
+					span.code-marks &#60
+					span.code-div ul
+					span.code-marks &#62<br>
+
+					
+					span.code-marks &#60
+					span.code-div li
+					span.code-marks &#62 
+					span.code-marks &#60
+					span.code-div a 
+					span.code-tag href
+					span.code-marks =“
+					span.code-name #
+					span.code-marks ”&#62
+					span.code-name Menu Item 1
+					span.code-marks &#60/
+					span.code-div a
+					span.code-marks &#62
+					span.code-marks &#60/
+					span.code-div li
+					span.code-marks &#62 <br> 
+
+					span.code-marks &#60
+					span.code-div li
+					span.code-marks &#62 
+					span.code-marks &#60
+					span.code-div a 
+					span.code-tag href
+					span.code-marks =“
+					span.code-name #
+					span.code-marks ”&#62
+					span.code-name Menu Item 2
+					span.code-marks &#60/
+					span.code-div a
+					span.code-marks &#62<br>
+					
+
+					span.code-marks &#60
+					span.code-div div
+					span.code-marks &#62<br>
+
+					span.code-marks &#60
+					span.code-div ul
+					span.code-marks &#62<br>
+
+					
+					span.code-marks &#60
+					span.code-div li
+					span.code-marks &#62 
+					span.code-marks &#60
+					span.code-div a 
+					span.code-tag href
+					span.code-marks =“
+					span.code-name #
+					span.code-marks ”&#62
+					span.code-name Menu Item 1
+					span.code-marks &#60/
+					span.code-div a
+					span.code-marks &#62
+					span.code-marks &#60/
+					span.code-div li
+					span.code-marks &#62 <br> 
+
+					span.code-marks &#60/
+					span.code-div ul
+					span.code-marks &#62<br>
+
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+
+					span.code-marks &#60/
+					span.code-div li
+					span.code-marks &#62 <br> 
+
+					span.code-marks &#60/
+					span.code-div ul
+					span.code-marks &#62<br>
+
+					span.code-marks &#60/
+					span.code-div nav
+					span.code-marks &#62<br>
+					
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+				p A navigation is critical to every website, and sometimes it's a pain to develop or find a responsive navigation. Liger has got you covered! Liger provides a basic dropdown that supports up to three levels of cascading menu items. 
+
+				p It uses an unordered list structure with li's for each item. If you want items to branch out of a list item, place a div before the closing li. Within that div you will have another unordered list with li's. Make sure to encase the nav structure in a div class of menu. 
+
+				p 
+
+				p 	
+				h3 Slider Controls
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name slider-button-wrap
+					span.code-marks ”&#62 <br>
+
+
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name prev
+					span.code-marks ”&#62 
+
+					span.code-marks &#60
+					span.code-div i 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name fa fa-chevron-left fa-3x
+					span.code-marks ”&#62 
+					span.code-marks &#60/
+					span.code-div i
+					span.code-marks &#62 
+
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+
+
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name next
+					span.code-marks ”&#62 
+
+					span.code-marks &#60
+					span.code-div i 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name fa fa-chevron-left fa-3x
+					span.code-marks ”&#62 
+					span.code-marks &#60/
+					span.code-div i
+					span.code-marks &#62 
+
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+
+
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+
+
+				p
+
+				p
+
+				h3 Slider
+				.code 
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name slider
+					span.code-marks ”&#62 <br>
+
+
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag style
+					span.code-marks =“
+					span.code-name display: inline-block;
+					span.code-marks '' 
+
+					span.code-tag class
+					span.code-marks =“
+					span.code-name animated fadeIn
+					span.code-marks ”&#62 
+					
+					span.code-marks &#60
+					span.code-div img 
+					span.code-tag src
+					span.code-marks ="
+					span.code-name your-image-here.jpg
+					span.code-marks ''
+					span.code-marks &#62
+
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62<br> 
+
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name animated fadeIn
+					span.code-marks ”&#62 
+					
+					span.code-marks &#60
+					span.code-div img 
+					span.code-tag src
+					span.code-marks ="
+					span.code-name your-image-here.jpg
+					span.code-marks ''
+					span.code-marks &#62
+
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62<br> 
+
+					span.code-marks &#60
+					span.code-div div 
+					span.code-tag class
+					span.code-marks =“
+					span.code-name animated fadeIn
+					span.code-marks ”&#62 
+					
+					span.code-marks &#60
+					span.code-div img 
+					span.code-tag src
+					span.code-marks ="
+					span.code-name your-image-here.jpg
+					span.code-marks ''
+					span.code-marks &#62
+
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62<br> 
+
+
+
+
+					span.code-marks &#60/
+					span.code-div div
+					span.code-marks &#62 <br> 
+
+
+				p
+
+				p
+
+				p A slider is a great interactive way to feature a particular service or product. You can showcase several items or only a limited few, depending on your needs. 
+
+				p Liger's slider is a full width slider meant to showcase images in all their 100% width glory. When you use Liger's slider componant, you must have the slider controls html then the html for the actual slider. The slider controls use a z-index positioning in order to be placed on top of the images. 
+
+				p Liger's slider componant requires javascript, so make sure to include the javascript file in your project.
+
+
+		include _footer
+
+
+
+
+
+		script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+		script(src="js/liger.js")

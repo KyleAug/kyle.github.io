@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Project - LIger Responsive CSS Grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet" media="screen" />
+    <link href="css/normalize.css" rel="stylesheet" media="screen" />
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div  ng-controller="navController as navList">
+      <ng-include src="'navigation.html'"></ng-include>
+    </div>
+    <section class="container projects">
+    <nav>
+      <ng-include src="'navigation-toggle.html'"></ng-include>
+    </nav>
+    <header>
+      <h1>Project
+      <span class="subhead">Liger Responsive CSS Grid</span></h1>
+    </header>
+    <section class="project-grid">
+
+
+
+      <section class="project-header">
+        <img src="imgs/liger-css-grid.jpg" alt="">
+      </section>
+
+      <section class="project-descrition" >
+        <h3>This is a css framework developed with a large corporate design environment in mind. I full-heartedly believe no two web design environments are the same, and Liger will help developers build faster responsive websites especially in a large corporate or Fortune 500 company.
+</h3>
+      </section>
+
+      <section class="project-display">
+
+        <div class="button"><a href="http://jaejohns.github.io/siteprojects/liger/default.html" target="_blank">
+          View Live Site </a> </div>
+      </section>
+
+
+
+    </section>
+
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/nav.js"  type="text/javascript"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/functions.js"></script>
+  </body>
+</html>

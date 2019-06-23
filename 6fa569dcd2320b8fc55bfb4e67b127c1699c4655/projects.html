@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Work</title>
+    <link href="css/main.css" rel="stylesheet" media="screen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet" media="screen" />
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div  ng-controller="navController as navList">
+      <ng-include src="'navigation.html'"></ng-include>
+    </div>
+    <div class="container work">
+      <nav>
+        <ng-include src="'navigation-toggle.html'"></ng-include>
+      </nav>
+      <header>
+          <h1>Projects</h1>
+      </header>
+        <article class="work-grid"  ng-controller="portController as portList">
+          <figure ng-repeat="item in portList.list">
+            <a href="{{item.gallery}}"><img src="imgs/{{item.thumbnail}}.jpg" alt="" />
+            <figcaption>{{item.figcaption}}</figcaption></a>
+          </figure>
+        </article>
+    </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <script src="js/nav.js"  type="text/javascript"></script>
+      <script src="js/portfolio.js"></script>
+
+  </body>
+</html>

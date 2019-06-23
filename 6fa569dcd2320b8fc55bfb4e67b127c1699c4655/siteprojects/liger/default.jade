@@ -1,0 +1,96 @@
+doctype
+html(lang='en')
+	head
+		meta(charset="UTF-8")
+		meta(name="keywords" description="Liger CSS Grid Framework, css framework, grid framework, web framework")
+		meta(name="description" content="Liger CSS Grid Framework")
+		meta(content="width=device-width,initial-scale=1.0", name="viewport")
+		link(href="css/liger.css", media="screen", rel="stylesheet", type="text/css")
+		link(href="css/main.css", media="screen", rel="stylesheet", type="text/css")
+		
+	body#home
+		header
+			.overlay
+
+				include _nav
+
+				.headerInfo
+					img(src="images/liger-logo.svg")
+					.blurb
+						p.large-type.uppercase.gold Relax. Don't Worry.
+						p.medium-type Let Liger Do the Work for You
+						a.button.bg-gold.round.uppercase.margin-top-20(href="https://github.com/jeraldjjohnson/Liger-CSS-Responsive-Grid-Framework" target="_blank") Download Liger on Github
+		
+		section.about					
+			.row.margin-top-10
+				.large-12.columns.text-center
+					h1.large-type.font-weight-300.uppercase The Liger CSS&nbsp;Grid Framework
+
+			.row.margin-top-10
+
+				.display.large-7.columns
+					img(src="images/liger-example-all.png")
+				.large-5.columns.ligerlogo
+			
+					//img(src="images/logo-liger-plus-circles.png")
+					.description
+						h1 About the Framework
+						p The Liger CSS Grid Framework is a lightweight grid system but unlike other lightweight css grid systems Liger offers great component options to achieve a feature rich website experience. It is derived from years of working in a corporate design environment. Liger also has an unique implementation method, which will allow you to only use the css styles you want or need. If you've worked with other css grids before, you know you you can inherit css styles that will make your website bloated with unused styles. With Liger, you can finally have a grid system without having all the bloated css!
+
+		section.featureList
+			.row.margin-top-10
+				.large-12.columns.text-center
+					h1.large-type.font-weight-300.uppercase Liger's Features
+			.row.margin-top-10.paddingTop10
+				.large-3.medium-6.columns
+					.pod.black.feature
+						img(src="images/icon-desktop.png")
+						h3.margin-top-20 Desktop First
+						p While mobile first frameworks are common, Liger is a great option if you like to develop with a desktop first approach.
+				.large-3.medium-6.columns
+					.pod.feature.black 
+						img(src="images/icon-bloat-free.png")
+						h3.margin-top-20 Bloat-Free
+						p This comes with some amazing components & options, but Liger isn't bogged down with excessive amount of extra code. 
+				.large-3.medium-6.columns
+					.pod.feature.black 
+						img(src="images/icon-clean.png")
+						h3.margin-top-20 Clean Layouts
+						p Uses design grid principles to make your code more organized and cleaner.
+				.large-3.medium-6.columns
+					.pod.feature.black
+						img(src="images/icon-name.png")
+						h3.margin-top-20 Save Time with Thinking of Names for your IDs and Classes
+						p No longer have to spend time thinking of names for all your divs. 
+			
+			.row.margin-top-10
+				.large-3.medium-6.columns
+					.pod.black.feature 
+						img(src="images/icon-customize.png")
+						h3.margin-top-20 Customizable
+						p Liger is coded in modular manner, so you can easily pick the code you want. It’s like a buffet but with code.
+				.large-3.medium-6.columns
+					.pod.feature.black 
+						img(src="images/icon-team.png")
+						h3.margin-top-20 Great for the Team
+						p No more code confusion. Everyone on your team will use the same semantic markup to code. 
+				.large-3.medium-6.columns
+					.pod.feature.black 
+						img(src="images/icon-browser.png")
+						h3.margin-top-20 Cross-Browser Compatible
+						p Your site will render the same in most browsers.
+				.large-3.medium-6.columns
+					.pod.feature.black
+						img(src="images/icon-coding.png")
+						h3.margin-top-20 Enforces Good Coding Habits
+						p Gives you a set a selectors you'll use on all your websites and web apps, which creates consistency for your projects.
+
+		include _footer
+
+
+
+
+
+		script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+		script(src="js/liger.js")
+		script(src="js/functions.js")

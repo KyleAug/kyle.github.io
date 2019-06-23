@@ -1,0 +1,42 @@
+body {background: #f3f3f3}
+
+section.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+section.container img {max-width: 100%}
+
+header .logo {width: 400px; position: relative; left: -10px}
+
+.slogan-text {
+    margin: -10px 0px 20px;
+    color: rgba(0, 0, 0, .5);
+}
+
+figure {margin: 0; padding: 0}
+
+h2, h3 {
+  margin: 0px 0 0;
+  text-transform: uppercase;
+}
+
+h3 {color: #dedede; margin-top: 5px}
+
+.inspire-card-info {background: white; padding:  20px}
+
+a {text-decoration: none;}
+
+a, a:visited, a:focus {color: #2199e8}
+
+footer {margin: 20px 0}
+footer span {font-size: 18px}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery of Teaching Sessions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet" media="screen" />
+    <link href="css/fonts.css" rel="stylesheet" media="screen" />
+    <link href="css/normalize.css" rel="stylesheet" media="screen" />
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div  ng-controller="navController as navList">
+      <ng-include src="'navigation.html'"></ng-include>
+    </div>
+    <section class="container gallery">
+      <nav>
+        <ng-include src="'navigation-toggle.html'"></ng-include>
+      </nav>
+      <header>
+          <h1>Gallery
+            <span class="subhead">Teaching the Process: Case Studies</span></h1>
+      </header>
+
+    <input type="checkbox" id="toggle" name="" value="">
+    <section class="page-content">
+    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 290 }'>
+      <div class="grid-item"><a href="case-study-mgm-production-services.html"><img src="imgs/production-services-event.jpg"></a></div>
+      <div class="grid-item"><a href="case-study-adventuredome.html"><img src="imgs/adventuredome.jpg"></a></div>
+
+    </div>
+  </section>
+
+  <section class="sidebar">
+      <article class="display sidebar-active" id="1">
+        <h3>Skype Session: Learning Atom</h3>
+        <p>
+          Atom is a free and open-source text and source code editor for OS X, Linux, and Window with support for plug-ins written in Node.js, and embedded Git Control, developed by GitHub. Atom is a desktop application built using web technologies.
+        </p>
+        <p>This Skype session focused on the core concepts of the application in order to get started using Atom right away.</p>
+      </article>
+      <article class="display" id="2">
+        <h3>Skype Session: HTML Basics Part 1</h3>
+        <p>HTML is a markup language used for structuring and presenting content on the World Wide Web. </p>
+        <p>This Skype session focused on the HTML page structure, formatting page content and structuring content</p>
+      </article>
+      <article class="display" id="3">
+        <h3>Skype Session: HTML Basics Part 2</h3>
+        <p>HTML is a markup language used for structuring and presenting content on the World Wide Web. </p>
+        <p>This Skype session focused on the structuring content, creating different type of lists and links. </p>
+      </article>
+
+  </section>
+
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/nav.js"  type="text/javascript"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+  </body>
+</html>

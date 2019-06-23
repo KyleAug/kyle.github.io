@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+  <head>
+    <meta charset="utf-8">
+    <title>MGM Production Services Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet" media="screen" />
+    <link href="css/normalize.css" rel="stylesheet" media="screen" />
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div  ng-controller="navController as navList">
+      <ng-include src="'navigation.html'"></ng-include>
+    </div>
+    <section class="container case-study">
+    <nav>
+      <ng-include src="'navigation-toggle.html'"></ng-include>
+    </nav>
+    <header>
+      <h1>Case Study
+      <span class="subhead">MGM Production Services</span></h1>
+    </header>
+    <section class="case-study-grid">
+
+      <section >
+        <figure>
+          <img src="imgs/case-study-mgm.jpg" alt="" />
+        </figure>
+        <article class="article-right">
+          <h3>About</h3>
+          <p>MGM Production Services is a team of talented production professionals that helps bring a wide range of events to life in some of the world’s most beautifully functional event spaces. They're a production company that has built rock solid relationships with every department at every MGM Resorts International® destination, the machine behind Vegas’ most renowned and globally revered resorts.</p>
+
+        </article>
+      </section>
+
+      <section>
+        <article class="article-left">
+          <h3>Objective</h3>
+          <p>The client wanted to bring awareness that MGM Resorts isn’t only a place to book your resort stay, but also has a dedicated staff to book the most beautiful events. With an archive of past events and offerings of different type of production services, my client wanted to build a digital presence that featured what they had to offer while incorporating their branding. </p>
+        </article>
+        <figure>
+          <img src="imgs/case-study-mgm2.jpg" alt="" />
+        </figure>
+      </section>
+
+
+
+      <section>
+        <figure>
+          <img src="imgs/design-production-services.jpg">
+        </figure>
+        <article class="article-right">
+          <h3>How the Goal was Achieved</h3>
+          <ul>
+
+              <li>- Incorporated their gorgeous photography from past events as main header images throughout all the pages and as smaller thumbnail images that linked to other pages.</li>
+              <li>- Incorporated their green brand color and brand font </li>
+              <li>- Vegas is extremely active at night and the dark color scheme is used to subtly symbolize this</li>
+              <li>- Featured dedicated image galleries and video galleries to really show the team’s talent in producing top notch events. </li>
+
+          </ul>
+        </article>
+
+      </section>
+
+      <section>
+
+        <div class="button"><a href="http://mgmresortsproductions.com/" target="_blank">
+          View Live Site </a> </div>
+
+      </section>
+    </section>
+
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/nav.js"  type="text/javascript"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/functions.js"></script>
+  </body>
+</html>

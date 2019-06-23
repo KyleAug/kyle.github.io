@@ -1,0 +1,146 @@
+/* ANIMATED FORM */
+.animated input {
+  background: none;
+  border: solid 2px rgb(247, 170, 15);
+  color: rgb(247, 170, 15);
+  padding: 15px 40px;
+  font-size: 18px;
+  display: inline-block;
+}
+.animated input:focus, input:active {
+  outline: none;
+}
+.animated input[type="text"], input[type="email"] {
+  border: none;
+  border-bottom: solid 2px rgb(247, 170, 15);
+}
+.animated input[type="submit"]:active {
+  color: white;
+  background: rgb(247, 170, 15);
+}
+
+.animated .input-group {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  margin-bottom:0.9375em
+}
+.animated .input-group input {
+  padding: 15px 0px;
+}
+.animated .input-group label {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-style: italic;
+  font-size: 18px;
+  color: #999;
+  pointer-events: none;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+.animated .input-group input:focus + label,
+.animated .input-group input.has-value + label {
+  top: 5px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+
+label input[type="checkbox"]{
+  display:none;
+
+}
+
+label input[type="checkbox"]:checked + .label-text:before{
+  content: "\f14a";
+  color:rgb(247, 170, 15);
+  animation:input 180ms ease-in
+
+}
+
+label input[type="checkbox"]:disabled + .label-text{
+    color: #aaa;
+
+}
+
+label input[type="checkbox"]:disabled + .label-text:before{
+  content: "\f0c8";
+  color: #ccc;
+
+}
+
+label input[type="checkbox"] + .label-text:before {
+  content: "\f096";
+  font-family: "FontAwesome";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  width: 1em;
+  display: inline-block;
+  margin-right: 5px ;
+  color:rgb(247, 170, 15);
+
+}
+
+label input[type="radio"]{
+  display:none;
+
+}
+
+label input[type="radio"]:checked + .label-text:before{
+  content: "\f058";
+  color:rgb(247, 170, 15);
+  animation:input 180ms ease-in
+
+}
+
+label input[type="radio"]:disabled + .label-text{
+    color: #aaa;
+
+}
+
+label input[type="radio"]:disabled + .label-text:before{
+  content: "\f111";
+  color: #ccc;
+
+}
+
+label input[type="radio"] + .label-text:before {
+  content: "\f10c";
+  font-family: "FontAwesome";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  width: 1em;
+  display: inline-block;
+  margin-right: 5px ;
+  color:rgb(247, 170, 15);
+
+}
+
+
+/*Bounce the checked checkbox*/
+@keyframes input{
+  0% {
+    transform:scale(0);
+  }
+  90%{
+    transform:scale(1.4);
+  }
+
+  100%{
+    transform:scale(1);
+  }
+  }

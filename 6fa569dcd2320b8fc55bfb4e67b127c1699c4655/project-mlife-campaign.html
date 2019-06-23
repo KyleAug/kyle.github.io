@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Project - Live the M&nbsp;life Instagram Campaign</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet" media="screen" />
+    <link href="css/normalize.css" rel="stylesheet" media="screen" />
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div  ng-controller="navController as navList">
+      <ng-include src="'navigation.html'"></ng-include>
+    </div>
+    <section class="container projects">
+    <nav>
+      <ng-include src="'navigation-toggle.html'"></ng-include>
+    </nav>
+    <header>
+      <h1>Project
+      <span class="subhead">Live the M&nbsp;life Instagram Campaign</span></h1>
+    </header>
+    <section class="project-grid">
+
+
+
+      <section class="project-header">
+        <img src="imgs/mlife-campaign-2.jpg" alt="">
+      </section>
+
+      <section class="project-descrition" >
+        <h3>This is a microsite partnered with an Instagram promotional offer.</h3>
+      </section>
+
+      <section class="project-display">
+        <img src="imgs/design-mlife.jpg">
+        <img src="imgs/design-mlife-2.jpg">
+        <img src="imgs/design-mlife-3.jpg">
+        <img src="imgs/design-mlife-4.jpg">
+        <br><br>
+        <div class="button"><a href="http://jaejohns.github.io/siteprojects/livethemlifecontest/" target="_blank">
+          View Live Site </a> </div>
+      </section>
+
+
+
+    </section>
+
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/nav.js"  type="text/javascript"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/functions.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+/*SLIDER*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes --fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+.slider {
+  background-color: black;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.slider div {
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  display: none;
+}
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slider-button-wrap {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+
+.next, .prev {
+	background: rgba(0, 0, 0, 0.7);
+  padding: 7px;	
+	color: rgba(255, 255, 255, 0.7);
+	margin-top:-28px;
+	transition:all .1s ease-in-out;
+}
+
+.next:hover, .prev:hover {	
+	color: rgba(255, 255, 255, 1);
+}
+.next {
+	position: absolute;
+	right: 14px;
+
+  
+}
+
+.prev {
+	position: absolute;
+	left: 14px;
+}

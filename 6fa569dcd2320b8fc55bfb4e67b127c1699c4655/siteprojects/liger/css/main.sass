@@ -1,0 +1,182 @@
+@import 'bourbon'
+
+header
+	background:
+		image:url(../images/splash2.jpg)
+		size:cover
+		repeat:no-repeat
+		attachment:fixed
+	width:100%
+	height:100vh
+	position:relative
+
+#home nav > ul > li > a
+  color: white
+
+.overlay
+	+position(absolute, 0 0 0 0)
+	background-color:rgba(0,0,0,.1)
+
+.headerInfo
+	display:flex
+	justify-content:center
+	align-items:center
+	flex-direction:column
+	height:80vh
+	color:white
+	transition:all .3s ease-in-out
+	img
+		//border-bottom: 1px solid #f6b50e	
+		margin-bottom: 20px
+		//padding-bottom: 32px
+		//opacity: .85
+		max-width: 300px
+		width:100%
+
+	.blurb
+		display: flex
+		align-items:center
+		justify-content: center
+		flex-direction: column
+		text-align: center
+		p
+			font-weight: 300
+
+section
+	padding:40px 20px
+
+.about 
+	overflow:hidden
+
+
+.featureList
+	background-color:#f6b50e	
+
+	.pod
+			position:relative
+			opacity: 0
+			transform: translateX(25px)
+			transition: all .3s ease-in-out
+			overflow: hidden
+			pointer:cursor
+			&.show
+				opacity: 1
+				transform: translateX(0px)
+
+.ligerlogo
+	img 
+		position:relative
+		margin-top:20px
+	.description 
+		position:relative
+		z-index: 2
+		margin:10px 0 30px
+		//transform: translate(-12px, 20px)
+
+
+.display
+	margin:20px 0 0 0
+	//transform: translate(12px, 20px)
+	img
+		max-width: 100%
+
+.feature
+	text-align:center
+	padding:20px
+	min-height:405px
+	p, h3 
+		text-align:left
+	img 
+		max-width: 100%
+
+.code-marks
+	color:white
+
+.code 
+	background-color:#272822
+	padding:10px
+	display:inline-block
+	min-width:320px
+	width:90%
+
+.code-div
+	color:#f92772
+
+.code-tag
+	color:#a6e22a
+
+.code-name
+	color:#d6d774
+
+.code 
+	strong
+		color:lighten(#d6d774, 20%)
+
+.code-val
+	color:#66d9ef
+
+.code-declaration
+	color:#fd7521
+
+
+#home footer
+	background-color:#f6b50e	
+
+.footer-flex
+	display:flex
+	align-items:center
+	justify-content:flex-start
+
+.footerIcons img 
+	margin:0 20px 0 0
+
+
+@media only screen and (max-width: 64.0625em)
+	header
+		background:
+			image:url(../images/splashTablet.jpg)
+
+	.ligerlogo
+		text-align: center
+		.description
+			text-align: left
+	.feature
+		min-height:350px
+
+		
+				
+
+
+@media only screen and (max-width: 40.0625em)
+	header
+		background:
+			image:url(../images/splashPhone.jpg)
+		height: 114vh
+
+	nav > ul > li > a 
+		line-height: 30px
+
+	.footer-flex
+		justify-content: center
+
+	.display
+		margin:0
+		.device 
+			img 
+				max-width: 92%
+
+			.laptop
+				top:150px
+			.desktop
+				left:7px
+				top:0
+			.tablet
+				left: 7px
+				top: 52px
+
+			.phone
+				left: 285px
+				top: 105px
+
+
+

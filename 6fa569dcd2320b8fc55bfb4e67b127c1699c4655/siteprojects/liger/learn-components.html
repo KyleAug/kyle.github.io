@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" description="Liger CSS Grid Framework, css framework, grid framework, web framework">
+    <meta name="description" content="Liger CSS Grid Framework">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <link href="css/liger.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/main.css" media="screen" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="default.html">Liger CSS Grid Framework</a></li>
+              <li><a href="learn-liger.html">	Learn Liger Grid</a></li>
+              <li><a href="learn-components.html">	Implementing the Components</a></li>
+              <li><a href="visual-dictionary.html">	Visual Component Guide</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="row marginTop10">
+      <div class="large-12 columns">
+        <h1 class="margin-top-20">How to Implement Liger's Components</h1>
+        <h2 class="bg-red inline-block padding-left-right-20">Getting Started</h2>
+        <p>The Liger CSS Grid Framework has all the components initialized right out of the box. However, you can easily customize the grid to only include the necessary styles you want or need with Liger's <span class="code-div">@import</span> feature. </p>
+        <p>When you open the liger.css file, you will notice the below list at the top of the css document. </p>
+        <div class="code"> <span class="code-div">@import </span><span class="code-val"> url</span><span class="code-marks">(</span><span class="code-declaration">https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css</span><span class="code-marks">);</span><br><span class="code-div">@import </span><span class="code-val"> url</span><span class="code-marks">(</span><span class="code-declaration">navbar.css</span><span class="code-marks">);</span><br><span class="code-div">@import </span><span class="code-val"> url</span><span class="code-marks">(</span><span class="code-declaration">panel.css</span><span class="code-marks">);</span><br><span class="code-div">@import </span><span class="code-val"> url</span><span class="code-marks">(</span><span class="code-declaration">billboard.css</span><span class="code-marks">);</span><br><span class="code-div">@import </span><span class="code-val"> url</span><span class="code-marks">(</span><span class="code-declaration">slider.css</span><span class="code-marks">);</span><br><span class="code-div">@import </span><span class="code-val"> url</span><span class="code-marks">(</span><span class="code-declaration">pod.css</span><span class="code-marks">);</span><br><span class="code-div">@import </span><span class="code-val"> url</span><span class="code-marks">(</span><span class="code-declaration">buttons.css</span><span class="code-marks">);</span><br><span class="code-div">@import </span><span class="code-val"> url</span><span class="code-marks">(</span><span class="code-declaration">animated-form.css</span><span class="code-marks">);</span><br><span class="code-div">@import </span><span class="code-val"> url</span><span class="code-marks">(</span><span class="code-declaration">media-object.css</span><span class="code-marks">);</span><br><span class="code-div">@import </span><span class="code-val"> url</span><span class="code-marks">(</span><span class="code-declaration">colors.css</span><span class="code-marks">);</span><br><span class="code-div">@import </span><span class="code-val"> url</span><span class="code-marks">(</span><span class="code-declaration">typography.css</span><span class="code-marks">);</span><br><span class="code-div">@import </span><span class="code-val"> url</span><span class="code-marks">(</span><span class="code-declaration">utilities.css</span><span class="code-marks">);</span><br></div>
+        <p>Each one of these files link to a separate css that helps obtain the functionality of that specific component. If you do not need a specific component; for example, the Slider component, on your website, then feel free to delete the <span class="code-div">@import</span> line linking to the slider.css file. By deleting a line from the liger css file, you are making this css file size smaller, which is a good thing. 		</p>
+        <p>The first file in the list is a link to Font Awesome. Liger uses Font Awesome's CDN in order to aid in some of Liger's animations for its animated form. </p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+    <footer>
+      <div class="row">
+        <div class="large-6 medium-6 columns">
+          <div class="bg-black yellow footer-flex padding-10"><img src="images/liger-logo2.svg">
+            <div class="footer-flex">
+              <h5>The Liger Framework Developed for the Open Source Community</h5>
+            </div>
+          </div>
+        </div>
+        <div class="large-6 medium-6 columns footer-flex padding-10 margin-top-10 footerIcons"><a href="https://github.com/jeraldjjohnson" target="_blank"><img src="images/github-logo.svg"></a><a href="https://www.instagram.com/jeraldjohnsonart/" target="_blank"><img src="images/instagram-logo.svg"></a><a href="mailto:jerald.j.johnson@gmail.com" target="_blank"><img src="images/email-logo.svg"></a></div>
+        <!--.body.paddingTop10h5.heading Github   Twitter   Instagram
+        -->
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/liger.js"></script>
+  </body>
+</html>

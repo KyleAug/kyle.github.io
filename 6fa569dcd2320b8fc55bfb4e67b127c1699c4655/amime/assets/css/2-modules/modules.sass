@@ -1,0 +1,45 @@
+.avatar
+  border-radius: 50%
+  +size(100px)
+  background: lightgray
+  margin-right: 25px
+  border: 1px solid white
+
+.controls, .controls-list
+  color: white
+  +position(absolute, null 0 20px 0)
+  padding: 20px
+  box-sizing: border-box
+  z-index: 10
+
+  .next, .prev
+    cursor: pointer
+    opacity: .7
+    transition: opacity .1s ease-in-out
+    &:hover
+      opacity: 1
+
+  .next
+    position: absolute
+    right: 25px
+    z-index: 99
+
+  .prev
+    position: absolute
+    left: 25px
+    z-index: 99
+
+.text
+  width: 100%
+  margin: 0 5%
+
+.controls-list
+  background: rgba(255, 255, 255, .55)
+  +position(relative, null 0px 0px 0px)
+  width: 100%
+
+  a
+    color: black
+    display: inline-block
+    margin-top: -14px
+    text-decoration: none

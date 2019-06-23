@@ -1,0 +1,106 @@
+doctype
+html(lang='en')
+	head
+		meta(charset="UTF-8")
+		meta(name="keywords" description="Liger CSS Grid Framework, css framework, grid framework, web framework")
+		meta(name="description" content="Liger CSS Grid Framework")
+		meta(content="width=device-width,initial-scale=1.0", name="viewport")
+		link(href="css/liger.css", media="screen", rel="stylesheet", type="text/css")
+		link(href="css/main.css", media="screen", rel="stylesheet", type="text/css")
+		
+	body
+		include _nav
+								
+		.row.marginTop10
+			.large-12.columns
+				h1.margin-top-20 How to Implement Liger's Components
+				h2.bg-red.inline-block.padding-left-right-20 Getting Started
+				p The Liger CSS Grid Framework has all the components initialized right out of the box. However, you can easily customize the grid to only include the necessary styles you want or need with Liger's <span class="code-div">@import</span> feature. 
+				p When you open the liger.css file, you will notice the below list at the top of the css document. 
+				.code 
+					span.code-div @import 
+					span.code-val  url
+					span.code-marks (
+					span.code-declaration https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css
+					span.code-marks );
+					br
+					span.code-div @import 
+					span.code-val  url
+					span.code-marks (
+					span.code-declaration navbar.css
+					span.code-marks );
+					br
+					span.code-div @import 
+					span.code-val  url
+					span.code-marks (
+					span.code-declaration panel.css
+					span.code-marks );
+					br
+					span.code-div @import 
+					span.code-val  url
+					span.code-marks (
+					span.code-declaration billboard.css
+					span.code-marks );
+					br
+					span.code-div @import 
+					span.code-val  url
+					span.code-marks (
+					span.code-declaration slider.css
+					span.code-marks );
+					br
+					span.code-div @import 
+					span.code-val  url
+					span.code-marks (
+					span.code-declaration pod.css
+					span.code-marks );
+					br
+					span.code-div @import 
+					span.code-val  url
+					span.code-marks (
+					span.code-declaration buttons.css
+					span.code-marks );
+					br
+					span.code-div @import 
+					span.code-val  url
+					span.code-marks (
+					span.code-declaration animated-form.css
+					span.code-marks );
+					br
+					span.code-div @import 
+					span.code-val  url
+					span.code-marks (
+					span.code-declaration media-object.css
+					span.code-marks );
+					br
+					span.code-div @import 
+					span.code-val  url
+					span.code-marks (
+					span.code-declaration colors.css
+					span.code-marks );
+					br
+					span.code-div @import 
+					span.code-val  url
+					span.code-marks (
+					span.code-declaration typography.css
+					span.code-marks );
+					br
+					span.code-div @import 
+					span.code-val  url
+					span.code-marks (
+					span.code-declaration utilities.css
+					span.code-marks );
+					br
+				p Each one of these files link to a separate css that helps obtain the functionality of that specific component. If you do not need a specific component; for example, the Slider component, on your website, then feel free to delete the <span class="code-div">@import</span> line linking to the slider.css file. By deleting a line from the liger css file, you are making this css file size smaller, which is a good thing. 		
+				p The first file in the list is a link to Font Awesome. Liger uses Font Awesome's CDN in order to aid in some of Liger's animations for its animated form. 
+
+				p
+				p
+			
+		include _footer
+
+
+
+
+
+		script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+		script(src="js/liger.js")

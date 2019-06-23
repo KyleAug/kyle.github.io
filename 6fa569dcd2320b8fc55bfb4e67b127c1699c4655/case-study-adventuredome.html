@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Adventuredome Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet" media="screen" />
+    <link href="css/normalize.css" rel="stylesheet" media="screen" />
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div  ng-controller="navController as navList">
+      <ng-include src="'navigation.html'"></ng-include>
+    </div>
+    <section class="container case-study">
+    <nav>
+      <ng-include src="'navigation-toggle.html'"></ng-include>
+    </nav>
+    <header>
+      <h1>Case Study
+      <span class="subhead">Adventuredome Exclusive Rate Landing Page</span></h1>
+    </header>
+    <section class="case-study-grid">
+
+      <section >
+        <figure>
+          <img src="imgs/case-study-adventuredome-01.jpg" alt="" />
+        </figure>
+        <article class="article-right">
+          <h3>About</h3>
+          <p>The Adventuredome is a 5-acre indoor amusement park located at Circus Circus in Las Vegas, Nevada on the Las Vegas Strip. The park offers 25 rides and attractions including the Canyon Blaster roller coaster, rock climbing wall, 18-hole miniature golf course, an arcade, clown shows, Xtreme Zone, Pikes Pass, Virtual Reality Zone, Midway Games, and carnival-type games. </p>
+
+        </article>
+      </section>
+
+      <section>
+        <article class="article-left">
+          <h3>Objective</h3>
+          <p>The client needed to promote an exclusive discount for Las Vegas National. This needed was going to be a self-contained landing page that existed on their main website, but did not need to strictly follow their website format of their current website pages. However, they still wanted to include their brand colors and brand font as well as showcasing the rides they have to offer. </p>
+        </article>
+        <figure>
+          <img src="imgs/case-study-adventuredome-02.jpg" alt="" />
+        </figure>
+      </section>
+
+
+
+      <section>
+        <figure>
+          <img src="imgs/develop-adventuredome-2.jpg">
+        </figure>
+        <article class="article-right">
+          <h3>How the Goal was Achieved</h3>
+          <p>In order to bring immediate attention of what this offer was a strong, bold headline is used to callout the offer. They really wanted the discount to standout to show the savings the athletes will get, so that paragraph uses their brand color. However, their purple brand color on text doesn't work well on the requested black background, so the font-size was increased to improve legibility. </p>
+            <p>Fun interactive effects were coded into the design as the user places their cursor over the images. This adds a fun, quirky vibe that is fitting with Adventuredome. </p>
+        </article>
+
+      </section>
+
+      <section>
+
+        <div class="button"><a href="http://adventuredome.com/exclusivegrouprate/" target="_blank">
+          View Live Site </a> </div>
+
+      </section>
+    </section>
+
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/nav.js"  type="text/javascript"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/functions.js"></script>
+  </body>
+</html>

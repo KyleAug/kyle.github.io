@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Project - Aria Dining Collection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/main.css" rel="stylesheet" media="screen" />
+    <link href="css/normalize.css" rel="stylesheet" media="screen" />
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div  ng-controller="navController as navList">
+      <ng-include src="'navigation.html'"></ng-include>
+    </div>
+    <section class="container projects">
+    <nav>
+      <ng-include src="'navigation-toggle.html'"></ng-include>
+    </nav>
+    <header>
+      <h1>Project
+      <span class="subhead">Aria Dining Collection</span></h1>
+    </header>
+    <section class="project-grid">
+
+
+
+      <section class="project-header">
+        <img src="imgs/sage-restuarant.jpg" alt="">
+      </section>
+
+      <section class="project-descrition" >
+        <h3>Below are a series of marketing banners to promote Sage, Carbone, and Julian Serrano: Aria's High-End Dining Collection.</h3>
+      </section>
+
+      <section class="project-display">
+        <img src="imgs/ARIA_DiningCollection_728x90.jpg" alt="">
+        <img src="imgs/ARIA_DiningCollection_300x250.jpg" alt="">
+
+      </section>
+
+
+
+    </section>
+
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/nav.js"  type="text/javascript"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/functions.js"></script>
+  </body>
+</html>
