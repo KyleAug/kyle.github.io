@@ -77,9 +77,6 @@ body {
 
 <!-- Header -->
 <body>
-  <h1>Baseball Cards</h1>
-  <p><b>Prep, Prep, Prep</b>:<i> Research is a prerequisute to value</i></p>
-  <p><b>Conversations are Interviews</b>:<i> Optimize the conversation, whether that means growing a relationship, extracting information, or achieving an objective.</i></p>
 
 <!-- Database Pull -->
     <div id="content"></div>
@@ -88,8 +85,19 @@ body {
 
 <!-- Containers -->
         <div>
-          <h2><a href='cards_{{association}}.html'>{{association}}</a></h2>
-          <h3>{{records}} records</h3>
+          <h2>{{name}}</a></h2>
+          <h5><i>Enhanced Relationship</i></h5>
+          <p><b>#1 Mutual Memories & Things in Common:</b> {{one}}</p>
+          <p><b>#2 Their Passions & Interests:</b> {{two}}</p>
+          <h5><i>Utility-Oriented</i></h5>
+          <p><b>#3 Strengths & Skills:</b> {{three}}</p>
+          <p><b>#4 Opportunities & Reality Checks & Recommendations:</b> {{four}}</p>
+          <h5><i>Moving Forward</i></h5>
+          <p><b>#5 Activities To Do With Them:</b> {{five}}</p>
+          <p><b>#6 Gift Ideas:</b> {{six}}</p>
+          <h5><i>Memories</i></h5>
+          <p><b>#7 Archive Notes:</b> {{seven}}</p>
+          <p><b>#8:</b> {{eight}}</p>
         </div>
       </div>
     </script>
@@ -114,7 +122,7 @@ body {
         var source   = $("#cat-template").html();
         var template = Handlebars.compile(source);
 
-        $.each( tabletop.sheets("Categories").all(), function(i, cat) {
+        $.each( tabletop.sheets("Summary").all(), function(i, cat) {
           var html = template(cat);
           $("#content").append(html);
         });
